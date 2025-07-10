@@ -32,8 +32,10 @@ public class User {
     }
     public void borrowBook(User user, Book book){
         if(book.getBookQuantity()>0) {
-            Records records = new Records(user, book, +1, false);
-            recordlist.add(records);
+            Records record = new Records(user, book, false);
+            book.decreaseQuantity();
+        }else {
+            System.out.println("Book not available");
         }
     }
 

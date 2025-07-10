@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LibraryManagementSystem {
+public class Library {
     static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
@@ -24,7 +24,6 @@ public class LibraryManagementSystem {
             if (option == 1) {
                 System.out.println("Show books");
             } else if (option == 2) {
-                System.out.println("Borrowing books");
                 System.out.println("Enter username: ");
                 String userName = scan.nextLine();
                 System.out.println("Enter book name: ");
