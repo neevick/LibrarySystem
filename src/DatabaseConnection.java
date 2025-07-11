@@ -3,10 +3,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private static String dbName = "librarydb";
-    private static String path = "jdbc:mysql://localhost:3306/"+dbName;
-    private static String username = "root";
-    private static String password = "";
+    private static final String dbName = "librarydb";
+    private static final String path = "jdbc:mysql://localhost:3306/"+dbName;
+    private static final String username = "root";
+    private static final String password = "";
 
     public static Connection connect() throws ClassNotFoundException, SQLException {
         Connection conn = null;
@@ -14,5 +14,4 @@ public class DatabaseConnection {
         conn = DriverManager.getConnection(path, username, password);
         return conn;
     }
-
 }
