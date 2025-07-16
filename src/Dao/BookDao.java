@@ -76,6 +76,7 @@ public class BookDao {
             }
             for(Book Book0: booklist){
                 System.out.println( "BookNumber"+"\n"+Book0.getBookNumber()+"\n"+"BookName"+"\n"+Book0.getBookName()+"\n"+"Book author"+"\n"+Book0.getBookAuthor()+"\n"+"BookQuantity"+"\n"+Book0.getBookQuantity());
+                System.out.println("\n");
             }
         }
         catch (SQLException | ClassNotFoundException e){

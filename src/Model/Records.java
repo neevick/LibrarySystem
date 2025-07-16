@@ -16,6 +16,4 @@ public class Records {
         this.book = book;
         this.returnStatus = false;
     }
-
-
 }
