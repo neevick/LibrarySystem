@@ -12,6 +12,10 @@ public class UpdateBookView {
         int bookNumber = scan.nextInt();
         System.out.println("Enter bookId");
         int bookId = scan.nextInt();
-        bookController.updateBook(bookId, bookNumber);
+        if (bookController.updateBook(bookId, bookNumber)) {
+            System.out.println("Book updated successfully");
+        } else {
+            System.out.println("Book not updated");
+        }
     }
 }
